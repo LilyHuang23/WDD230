@@ -1,0 +1,43 @@
+font-family: 'Noto Serif', serif; 
+@media screen and (min-width:600px){
+
+}
+@media screen and (min-width:900px){
+
+}
+
+
+
+/* #content{
+    margin: 0 auto;
+    width: 50%;
+    font-family:'"Times New Roman", Times, serif';
+}
+header{
+    display: grid;
+    border-radius: 15px;
+    grid-template-columns: 30% 70%;
+    background-color: rgb(3,3,80);
+    color:white;
+    font-size:24pt;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+#hr2{
+    margin-bottom: 10pt;
+}
+footer{
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(3,3,80);
+    color: white;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#datediv{
+    color: rgb(255,195,0);
+}
+ */
