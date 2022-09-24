@@ -9,8 +9,6 @@
 }
 header{
     display: grid;
-    /* border-radius: 15px; */
-    /* grid-template-columns: 30% 70%; */
     background-color: rgb(3,3,80);
     color:white;
     font-size:24pt;
@@ -83,7 +81,7 @@ footer{
       main{
         display:grid;
         grid-template-columns: 45% 45%;
-        column-gap: 5pt;
+        column-gap: 10pt;
       }
       section div{
           background-color:rgb(135, 135, 176);
@@ -111,7 +109,8 @@ footer{
             width: 100%;
             display:grid;
             justify-content: center;
-            grid-template-columns: 30% 30% 30%;
+            grid-template-columns: 32% 32% 32%;
+            column-gap: 8pt;
          }
          section div{
              background-color: rgb(212, 212, 252);
@@ -122,11 +121,7 @@ footer{
           margin: 5px;
           align-items: center;
          }
-         .wrapper{
-          display: grid;
-          column-gap: 2%;
-          grid-template-columns: 25% 25% 25%;
-         }
+         
   
   }
   
