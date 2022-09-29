@@ -4,7 +4,7 @@
     font-family: 'Noto Serif', serif; 
 }
 header{
-    display: grid;
+    display:block;
     background-color: rgb(3,3,80);
     color:white;
     font-size:24pt;
@@ -15,9 +15,14 @@ header{
 
 main{
     display:grid;
-    grid-template-columns: 100%;
     width: 100%;
-    margin-top: 15pt;
+    margin-top: 20pt;
+}
+nav div a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: aqua;
 }
 h2{
     background-color: rgb(109, 109, 145);
@@ -30,24 +35,7 @@ p{
     text-align: left;
     margin-left: 10pt;
 }
-.box{
-    /* border: 5pt;
-    border-color: black; */
-    border-radius: 10pt;
-    border: 2pt solid black;
-    overflow: hidden;
 
- }
- .box>div{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
- }
-.pic{
-   width:80%;
-   height: 550px;
-   margin: 5pt auto;
- }
  
 
 footer{
@@ -64,7 +52,7 @@ footer{
     color: rgb(255,195,0);
 }
  
-@media screen and (min-width:600px){
+@media screen and (min-width:700px){
     h1{
        font-size: 20pt;   
       }
@@ -74,50 +62,21 @@ footer{
       p{
           font-size: 14pt;
       }
+      #content{
+        width:50%
+      }
       main{
-        display:grid;
-        grid-template-columns: 45% 45%;
-        column-gap: 10pt;
+        
       }
-      section div{
-          background-color:rgb(135, 135, 176);
+      nav{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+        
+        font-size: 18px;
       }
-  }
-  @media screen and (min-width:900px){
-      h1{
-          font-size: 18pt;
-          margin: 0%;   
-         }
-         h2{
-             font-size: 16pt;
-             line-height: 32pt;
-         }
-         h3{
-            font-size: 10pt;
-         }
-         a{
-            font-size: 10pt;
-         }
-         p{
-             font-size: 14pt;
-         }
-         main{
-            width: 100%;
-            display:grid;
-            justify-content: center;
-            grid-template-columns: 32% 32% 32%;
-            column-gap: 8pt;
-         }
-         section div{
-             background-color: rgb(212, 212, 252);
-             color: black;
-            
-         }
-         section{
-          margin: 5px;
-          align-items: center;
-         }
-         
-  
+      nav div a{
+        border: solid 2pt;
+      }
   }
   
