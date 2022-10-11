@@ -1,0 +1,19 @@
+@media screen and (min-width:600px){
+    h1{
+       font-size: 20pt;   
+      }
+      h2{
+          font-size: 18pt;
+      }
+      p{
+          font-size: 14pt;
+      }
+      main{
+        display:block;
+        grid-template-columns: 45% 45%;
+        column-gap: 10pt;
+      }
+      section div{
+          background-color:rgb(135, 135, 176);
+      }
+  }

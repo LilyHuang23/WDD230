@@ -1,0 +1,38 @@
+@media screen and (min-width:900px){
+    h1{
+        font-size: 18pt;
+        margin: 0%;   
+       }
+       h2{
+           font-size: 16pt;
+           line-height: 32pt;
+       }
+       h3{
+          font-size: 10pt;
+       }
+       a{
+          font-size: 10pt;
+       }
+       p{
+           font-size: 14pt;
+       }
+       main{
+          width: 100%;
+          display:grid;
+          justify-content: center;
+          grid-template-columns: 32% 32% 32%;
+          column-gap: 8pt;
+       }
+       section div{
+           background-color: rgb(212, 212, 252);
+           color: black;
+          
+       }
+       section{
+        display: block;
+        margin: 5px;
+        align-items: center;
+       }
+       
+
+}
