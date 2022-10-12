@@ -79,6 +79,10 @@ body {
     background-color: #795548;
     color: white;
   }
+.social img{
+  width: 20px;
+  margin: 5px;  
+}
 main{
   display: block;
   width: 100%;
