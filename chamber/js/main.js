@@ -1,27 +1,21 @@
-// datetime
+const htoday = new Date();
+if (htoday.getDay()==4) {
+    document.querySelector(".banner").style.display="block";
+}
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
- // for european/family history format with day first.
-
 // derive the current date using a date object
 const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-// long, medium, short options ... try them
-
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
-// topnav
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
 
+function toggleMenu(){
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerBtn').classList.toggle('open');
+}
+const x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;
 // footer last update
 const today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();

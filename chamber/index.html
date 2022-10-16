@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="discription" content="Travel Idaho Chamber of Commerce - Home page. This page is for class purpose.">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
@@ -17,67 +17,88 @@
 </head>
 <body>
   <div id="content">
+    <p class="banner">"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
+
     <header>
-      <div class="topnav">
-          <div class="headeritem">
-            <!-- Navigation links (hidden by default) -->
-          <nav id="myLinks">
+      <img class='logo1' src="images/idaho.jpg" alt="Travel Idaho company logo"/>            
+      <div class="title">
+        <h1>Travel Idaho </h1>
+        <p>Chamber of Commerce</p>
+      </div>
+      <div class="social">
+        <img src="images/facebook.png" alt="Facebook icons created by Bogdan Rosu - Flaticon">
+        <img src="images/instagram.png" alt="Instagram icons created by Hight Quality Icons - Flaticon">
+      </div>
+        <nav id="entireNav">
+          <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
             <ul id="primaryNav">
+              <!-- put in the active after li so <li class="active><a" -->
               <li><a href='#'>Discover</a></li>
               <li><a href='#'>Directory</a></li>
               <li><a href='#'>Join</a></li>
-              <li><a href='#'>Contact</a></li> 
-            <li></li>  
+              <li><a href='#'>Contact</a></li>
             </ul>
-          </nav>
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>                
-            <img class='logo1' src="images/idaho.jpg" alt="Travel Idaho company logo"/>            
-            <div class="title">
-            <h1>Travel Idaho </h1>
-            <p>Chamber of Commerce</p>
-            </div>
-            
-            <div class="social">
-            <img src="images/facebook.png" alt="Facebook icons created by Bogdan Rosu - Flaticon">
-            <img src="images/instagram.png" alt="Instagram icons created by Hight Quality Icons - Flaticon">
-            </div>
-            <div class="date"></div>
-            <aside></aside>
-          </div>
-          
-          
+        </nav>
+      <div class="date"></div>           
     </header>
 
   <main>
     <section class="hero">
-      <p>Hero with site name and call to action</p>
+      <img src="images/hero.jpg" alt="Little Redfish Lake by Charles Knowles / CC BY 2.0">
+      <h2>Welcome to Travel Idaho</h2>
+      <button class="herobutton">Join the Chamber</button>
     </section>
     <section class="event">
-      <p>Event</p>
+      <h2>What Happend Across The River?</h2>
+      <!-- <a href="https://thehauntedriver.com/" alt="The Haunted River website">🎃Visit Here🎃</a> -->
+      <p>👻  The Haunted River  👻</p>
+      <p>Thinking where to celebrate Halloween? More info...</p>
     </section>
     <section class="weather">
-      <p>Weather</p>
+      <h2>Weather</h2>
+      <div class="weatherdiv">
+      <img src="images/cloudy.png" alt="https://www.flaticon.com/free-icons/weatherWeather icons created by iconixar - Flaticon">
+      <p class="temp">25°C</p>
+      <p class="describe">Partly Cloudy</p>
+      </div>
+      <hr>
+      <p>Wind Speed: 2.5 km/h</p>
+      <p>Wind Chill: N/A</p>
     </section>
     <section class="newRel">
-      <p>New Release</p>
+      <h2>New Release</h2>
+      <p>I don't know what to put here, but I will type something so it looks like I have some content in here.</p>
     </section>
     <section class="join">
-      <p>Join</p>
+      <button class="joinbutton">Join Us!</button>
+      <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
     </section>    
     
     <section class="spotlight">
       <div class="s1">
-        <p>Spotlight1</p>
+        <h2>BYUI Event</h2>
+        <img src="images/s1.png" alt="https://www.flaticon.com/free-icons/event Event icons created by Freepik - Flaticon">
+        <p>"Be inspired and achieve your potential!"</p>
+        <hr>
+        <a href="https://ibelong.byui.edu/home_login" alt="BYUI Event website">👉BYUI Event websit👈</a>
+        <p>Contact Us: ask@byui.edu</p>
       </div>
       <div class="s2">
-        <p>Spotlight2</p>
+        <h2>Idaho Event</h2>
+        <img src="images/s2.png" alt="https://www.flaticon.com/free-icons/event Event icons created by Freepik - Flaticon">
+        <p>Festivals & Events In Idaho</p>
+        <hr>
+        <a href="https://visitidaho.org/things-to-do/festivals-events/" alt="Annual Festivals & Events in Idaho">Annual Festivals & Events in Idaho</a>
+        <p>Idaho Department of Commerce - Tourism Development</p>
       </div>
       <div class="s3">
-        <p>Spotlight3</p>
+        <h2>Rexburg Event</h2>
+        <img>
+        <img src="images/s3.png" alt="https://www.flaticon.com/free-icons/event Event icons created by Freepik - Flaticon">
+        <p>Upcoming Events in Rexburg Idaho</p>
+        <hr>
+        <a src="https://www.rexburg.org/art/page/upcoming-events" alt="Upcoming Events in Rexburg Idaho">Events in Rexburg</a>
+        <p>City of Rexburg Idaho</p>
       </div>
     </section>
   </main>
