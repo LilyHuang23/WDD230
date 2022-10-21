@@ -58,7 +58,7 @@
         grid-column: 2/3;
         grid-row: 1/3;
     }
-    .hero>img{
+    .hero img{
         width: 100%;
         height: 100%;
     }

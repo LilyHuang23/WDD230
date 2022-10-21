@@ -46,7 +46,12 @@
 
   <main>
     <section class="hero">
-      <img src="images/hero.jpg" alt="Little Redfish Lake by Charles Knowles / CC BY 2.0">
+      <picture>
+        <source media="(min-width: 530px)" srcset="images/medium.webp" />
+        <source media="(min-width: 1100px)" srcset="images/large.webp" />
+        <img src="images/small.webp" alt="New hero picture for this week- people in the office" />
+      </picture>
+      <!-- <img src="images/hero.jpg" alt="Little Redfish Lake by Charles Knowles / CC BY 2.0"> -->
       <h2>Welcome to Travel Idaho</h2>
       <button class="herobutton">Join the Chamber</button>
     </section>
@@ -59,20 +64,20 @@
     <section class="weather">
       <h2>Weather</h2>
       <div class="weatherdiv">
-      <img src="images/cloudy.png" alt="https://www.flaticon.com/free-icons/weatherWeather icons created by iconixar - Flaticon">
-      <h3 class="temp">25°C</h3>
-      <h3 class="describe">Partly Cloudy</h3>
+        <img src="images/cloudy.png" alt="https://www.flaticon.com/free-icons/weatherWeather icons created by iconixar - Flaticon">
+        <h2><span id="temperature"></span>&deg; F</h2> 
+        <h2 class="describe">Partly Cloudy</h2>
       </div>
       <hr>
-      <p>Wind Speed: 2.5 km/h</p>
-      <p>Wind Chill: N/A</p>
+      <h3>Wind Speed: <span id="windspeed"></span> mph</h3>
+      <h3>Wind Chill: <span id="windchill"></span></h3>
     </section>
     <section class="newRel">
       <h2>New Release</h2>
       <p>I don't know what to put here, but I will type something so it looks like I have some content in here.</p>
     </section>
-    <section div class="join">
-      
+    <div class="join">
+      <section>
       <button class="joinbutton">Join Us!</button>
       <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
       </div>
@@ -121,7 +126,8 @@
     <hr>
     <div>&copy; <span></span> | Travel Idaho | WDD 230 Project | </div>
     <div id="datediv">Last Update: <span id="lastupdatedate"></span></div>
-  
+    
+    <script src="js/windchill.js"></script>
     <script src="js/main.js"></script>
   </footer>
   
