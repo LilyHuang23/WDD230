@@ -1,6 +1,6 @@
 
 function setwindchill(temp, windspeed) {
-    let tempobj = document.querySelector("#temprature");
+    let tempobj = document.querySelector("#temperature");
     let windspeedobj = document.querySelector("#windspeed");
     let windchillobj = document.querySelector("#windchill");
 
