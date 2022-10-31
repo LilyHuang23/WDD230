@@ -1,3 +1,4 @@
+// Using local storage, display the amount of time in day
 window.localStorage.setItem("last-visit", new Date("10/25/2022"));
 
 const visit = document.querySelector("#visit-message");
@@ -14,3 +15,23 @@ if (lastVisit != null) {
 }
 visit.textContent = visitMessage;
 window.localStorage.setItem("last-visit", theday.toString());
+
+// lazy load
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((item, observer) => {
+        item.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImg(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    imgToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+}
+else {
+    imgToLoad.forEach((img) => {
+        loadImg(img);
+    })
+}
