@@ -257,10 +257,14 @@ main{
 /* Discover CSS */
 #discover-main{
   display: block;
+  text-align: center;
+  margin-top: 5px;
 }
-figure {background-color:#fff;}
-/* hover effect */
-figure img:hover {box-shadow: 0 0 50px #333;}
+#discover-main section{
+  border:solid #795548;
+  margin-top: 5px;
+
+}
 
 
 footer{
@@ -335,6 +339,9 @@ footer{
       grid-column: 2/3;
       grid-row: 5/6;
   }
+  /* Discover CSS */
+  figure img:hover {box-shadow: 0 0 50px #333;}
+
 }
 /* large */
 @media screen and (min-width:1100px) {
@@ -448,6 +455,10 @@ footer{
       border: 2pt solid black;
       background-color: #ebd4cc; 
   }
+  /* discover page picture affact */
+  figure {background-color:#fff;}
+  /* hover effect */
+  figure img:hover {box-shadow: 0 0 50px #333;}
   
 }
 
