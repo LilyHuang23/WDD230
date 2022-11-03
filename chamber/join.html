@@ -39,8 +39,78 @@
   </div>         
     
 
-  <main>
-    
+  <main id="join">
+    <h1>Join Us!</h1>
+    <form method="get" action="thanks.html">
+      <fieldset>
+        <legend>Applicant Information</legend>
+        <label>First Name* <input type="text" name="fname" required></label>
+        <label>Last Name* <input type="text" name="lname" required></label>
+        <label>Phone <input type="tel" name="phone" placeholder="1234567890"></label>
+        <label>Email* <input type="email" name="email" placeholder="@travelidaho.com" required></label>
+        <label>Business Name/ Title* <input type="text" name="title" required></label>
+
+      </fieldset>
+      <table>
+        <caption>Membership Levels Benefits</caption>
+        <thead>
+            <tr>
+                <th>Membership</th>
+                <th>Discount on events</th>
+                <th>discount on advertising</th>
+                <th>Fee</th>
+                <th>Free participation in the trade fair</th>
+                <th>other</th>
+            </tr>     
+        </thead>
+        <tbody>
+          <tr>
+            <td>NP</td>
+            <td colspan="5">For non profit organizations and there is no fee</td>
+          </tr>
+          <tr>
+              <td>Bronze</td>
+              <td>15%</td>
+              <td>10%</td>
+              <td>$50/month</td>
+              <td>N/A</td>
+              <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Silver</td>
+            <td>25%</td>
+            <td>15%</td>
+            <td>$100/month</td>
+            <td>✔️</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>$250/month</td>
+            <td>✔️</td>
+            <td>
+              <li>5 free featured ads per year</li>
+              <li>1 free training per quarter</li>
+            </td>
+          </tr>
+      </table>
+      <fieldset>
+        <legend>Membership Level</legend>
+        <p>Which membership you would like to subscribe? </p>
+        <label><input type="radio" name="membership" value="NP">NP</label>
+        <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+        <label><input type="radio" name="membership" value="Silver">Silver</label>
+        <label><input type="radio" name="membership" value="Gold">Gold</label>
+      </fieldset>
+      <input type="hidden" id="time" name="date&time" value="3487">
+      <input type="submit" value="subscribe">
+    </form>
+    <fieldset>
+      <legend>Business Description</legend>
+      <input type="textarea" name="description" placeholder="Tell us more about your business!">
+    </fieldset>
   </main>
 
 

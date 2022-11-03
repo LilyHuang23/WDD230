@@ -35,8 +35,13 @@ function setwindchill(temp, windspeed) {
 
 }
 setwindchill(49, 10);
-
-
+// join page
+const dateControl = document.querySelector('input[type="hidden"]');
+dateControl.value = today;
+// thanks page
+function return (){
+    location.replace("https://lilyhuang23.github.io/wdd230/chamber/index.html")
+}
 // footer last update
 const today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();
