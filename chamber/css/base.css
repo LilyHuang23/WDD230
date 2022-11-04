@@ -264,11 +264,102 @@ main{
 }
 /* join CSS */
 
-/* Thanks CSS */
-#thanks{
-  display: block;
+#joinpage {
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+}
+fieldset{
+  width: min-content;
+  font-size: 16pt;
+  margin: 0%;
+  padding: 0;
+}
+form{
+  align-items: center;
+}
+/* table */
+caption {
+  font-size: 24pt;
+  background-color: rgb(132, 117, 93);
+  border: 2pt solid gray;
+  padding: 5px;
   text-align: center;
 }
+thead{
+  color: aliceblue;
+  background-color: rgb(196, 144, 60);
+  font-size: 20pt;
+}
+tfoot {
+  background-color: rgb(132, 117, 93);
+  font-size: 14pt; 
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+tbody tr:nth-child(even){
+  background-color: rgb(247, 234, 215);
+
+}
+tbody tr:nth-child(odd){
+  background-color: rgb(191, 170, 138);
+}
+table.membertable{
+  width: 75%;
+}
+table, td, th {
+  border: 1pt solid gray;
+
+}
+table {
+  display: block;
+  align-items: center;
+  margin: 10pt;
+  border-collapse: collapse;
+}
+
+label.myinput input:required{
+  border-left: red solid 5pt;
+}
+label.myinput input:required:valid{
+  border-left: green solid 5pt;
+
+}
+label.myinput{
+  display: block;
+  padding: 10pt;
+}
+input.mysubmit {
+  width: 20rem;
+  max-width: 30rem;
+  display: flow-root;
+  height: 28pt;
+  margin-left: 10pt;
+}
+label.myinput input, label.myinput textarea{
+  display: block;
+  font-size: 1.2rem;
+  padding: .5rem;
+  width: 20rem;
+  max-width: 30rem;
+
+}
+label.radio{
+  display: block;
+
+}
+label.radio input{
+  margin-right: 10pt;
+
+}
+/* Thanks CSS */
+#thankspage main{
+  display: block;
+  text-align: center; 
+}
+
 
 footer{
     font-size: 12pt;
@@ -279,6 +370,9 @@ footer{
     letter-spacing: 5px;
     margin-top: 15pt;
 }
+
+
+
 /* medium */
 @media screen and (min-width:530px){
   body {
@@ -344,6 +438,18 @@ footer{
   }
   /* Discover CSS */
   figure img:hover {box-shadow: 0 0 50px #333;}
+  /* joinpage */
+  #joinpage {
+    display: block;
+    width: 90%; 
+    justify-items: auto;
+  }
+  .joinform{
+    display:block;
+  }
+  .membertable{
+    width: 90%;
+  }
 
 }
 /* large */
@@ -461,7 +567,17 @@ footer{
   /* discover page picture affact */
   figure {background-color:#fff;}
   /* hover effect */
-  figure img:hover {box-shadow: 0 0 50px #333;}
+  figure img:hover {box-shadow: 0 0 50px #333;} 
+  #joinpage {
+    display: block;
+    width: 90%; 
+    justify-items: auto;
+  }
+  .joinform{
+    display:block;
+
+  }
+
   
 }
 

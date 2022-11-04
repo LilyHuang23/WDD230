@@ -39,18 +39,27 @@
   </div>         
     
 
-  <main id="join">
-    <h1>Join Us!</h1>
-    <form method="get" action="thanks.html">
+  <main id="joinpage">
+    
+    <form method="GET" action="thanks.html">
       <fieldset>
-        <legend>Applicant Information</legend>
-        <label>First Name* <input type="text" name="fname" required></label>
-        <label>Last Name* <input type="text" name="lname" required></label>
-        <label>Phone <input type="tel" name="phone" placeholder="1234567890"></label>
-        <label>Email* <input type="email" name="email" placeholder="@travelidaho.com" required></label>
-        <label>Business Name/ Title* <input type="text" name="title" required></label>
-
-      </fieldset>
+        <caption>Applicant Information</caption>
+        
+        <label class="myinput">First Name* <input type="text" name="fname" required></label>
+        <label class="myinput">Last Name* <input type="text" name="lname" required></label>
+        <label class="myinput">Phone <input type="tel" name="phone" placeholder="1234567890"></label>
+        <label class="myinput">Email* <input type="email" name="email" placeholder="@travelidaho.com" required></label>
+        <label class="myinput">Business Name/ Title* <input type="text" name="title" pattern="[A-Za-z -]{7, }" required></label>       
+        <p>Which membership you would like to subscribe? </p>
+        <label class="radio"><input type="radio" name="membership" value="NP">NP</label>
+        <label class="radio"><input type="radio" name="membership" value="Bronze">Bronze</label>
+        <label class="radio"><input type="radio" name="membership" value="Silver">Silver</label>
+        <label class="radio"><input type="radio" name="membership" value="Gold">Gold</label>
+        <label class="myinput">Business Description<textarea name="description" cols="40" rows="5"></textarea></label>
+      <label><input type="hidden" id="time" name="date&time" value=""></label>
+      <input class="mysubmit" type="submit" value="Subscribe!">
+    </form>
+    <div class="membertable">
       <table>
         <caption>Membership Levels Benefits</caption>
         <thead>
@@ -96,21 +105,9 @@
             </td>
           </tr>
       </table>
-      <fieldset>
-        <legend>Membership Level</legend>
-        <p>Which membership you would like to subscribe? </p>
-        <label><input type="radio" name="membership" value="NP">NP</label>
-        <label><input type="radio" name="membership" value="Bronze">Bronze</label>
-        <label><input type="radio" name="membership" value="Silver">Silver</label>
-        <label><input type="radio" name="membership" value="Gold">Gold</label>
-      </fieldset>
-      <input type="hidden" id="time" name="date&time" value="3487">
-      <input type="submit" value="subscribe">
-    </form>
-    <fieldset>
-      <legend>Business Description</legend>
-      <input type="textarea" name="description" placeholder="Tell us more about your business!">
-    </fieldset>
+    </div>
+  </fieldset>
+  </div>
   </main>
 
 
