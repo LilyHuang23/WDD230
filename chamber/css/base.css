@@ -265,22 +265,66 @@ main{
 /* join CSS */
 
 #joinpage {
-  align-items: center;
+  display: block;
   max-width: 500px;
   margin: auto;
 }
-fieldset{
-  width: min-content;
+.joinForm{
   font-size: 16pt;
-  margin: 0%;
-  padding: 0;
 }
 form{
   align-items: center;
 }
 /* table */
+table caption {
+  font-size: 1.3em;
+  display: block;
+}
+
+table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+table tr {
+  border-bottom: 3px solid #ddd;
+  display: block;
+  margin-bottom: .625em;
+  margin-left: 10pt;
+}
+
+table td {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  font-size: .8em;
+  text-align: right;
+  width: 25rem;
+
+}
+
+table td::before {
+  /*
+  * aria-label has no advantage, it won't be read inside a table
+  content: attr(aria-label);
+  */
+  width: max-content;
+  content: attr(data-label);
+  display: block;
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table td:last-child {
+  border-bottom: 0;
+}
 caption {
-  font-size: 24pt;
   background-color: rgb(132, 117, 93);
   border: 2pt solid gray;
   padding: 5px;
@@ -306,9 +350,7 @@ tbody tr:nth-child(even){
 tbody tr:nth-child(odd){
   background-color: rgb(191, 170, 138);
 }
-table.membertable{
-  width: 75%;
-}
+
 table, td, th {
   border: 1pt solid gray;
 
@@ -319,6 +361,7 @@ table {
   margin: 10pt;
   border-collapse: collapse;
 }
+
 
 label.myinput input:required{
   border-left: red solid 5pt;
@@ -437,18 +480,19 @@ footer{
       grid-row: 5/6;
   }
   /* Discover CSS */
-  figure img:hover {box-shadow: 0 0 50px #333;}
+  /* figure img:hover {box-shadow: 0 0 50px #333;}
   /* joinpage */
   #joinpage {
-    display: block;
-    width: 90%; 
-    justify-items: auto;
-  }
-  .joinform{
-    display:block;
-  }
-  .membertable{
+    display: grid;
+    grid-template-rows: 1fr;
     width: 90%;
+    justify-content: center;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    margin-left: 0pt;
   }
 
 }
@@ -568,15 +612,11 @@ footer{
   figure {background-color:#fff;}
   /* hover effect */
   figure img:hover {box-shadow: 0 0 50px #333;} 
-  #joinpage {
+  /* #joinpage {
     display: block;
     width: 90%; 
     justify-items: auto;
-  }
-  .joinform{
-    display:block;
-
-  }
+  } */
 
   
 }

@@ -42,9 +42,8 @@
   <main id="joinpage">
     
     <form method="GET" action="thanks.html">
-      <fieldset>
-        <caption>Applicant Information</caption>
-        
+      <div class="joinForm">
+        <h1>Applicant Information</h1> 
         <label class="myinput">First Name* <input type="text" name="fname" required></label>
         <label class="myinput">Last Name* <input type="text" name="lname" required></label>
         <label class="myinput">Phone <input type="tel" name="phone" placeholder="1234567890"></label>
@@ -56,58 +55,59 @@
         <label class="radio"><input type="radio" name="membership" value="Silver">Silver</label>
         <label class="radio"><input type="radio" name="membership" value="Gold">Gold</label>
         <label class="myinput">Business Description<textarea name="description" cols="40" rows="5"></textarea></label>
-      <label><input type="hidden" id="time" name="date&time" value=""></label>
-      <input class="mysubmit" type="submit" value="Subscribe!">
+        <label><input type="hidden" id="time" name="date&time" value=""></label>
+        <input class="mysubmit" type="submit" value="Subscribe!">
+      </div>
     </form>
+  
     <div class="membertable">
       <table>
         <caption>Membership Levels Benefits</caption>
         <thead>
             <tr>
-                <th>Membership</th>
-                <th>Discount on events</th>
-                <th>discount on advertising</th>
-                <th>Fee</th>
-                <th>Free participation in the trade fair</th>
-                <th>other</th>
+                <th scope="col">Membership</th>
+                <th scope="col">Discount on events</th>
+                <th scope="col">Discount on advertising</th>
+                <th scope="col">Fee</th>
+                <th scope="col">Free participation in the trade fair</th>
+                <th scope="col">other</th>
             </tr>     
         </thead>
         <tbody>
           <tr>
-            <td>NP</td>
-            <td colspan="5">For non profit organizations and there is no fee</td>
+            <td data-label="member">NP</td>
+            <td data-label="events"colspan="5">For non profit organizations and there is no fee</td>
           </tr>
           <tr>
-              <td>Bronze</td>
-              <td>15%</td>
-              <td>10%</td>
-              <td>$50/month</td>
-              <td>N/A</td>
-              <td>N/A</td>
+              <td scope="row" data-label="member">Bronze</td>
+              <td data-label="events">15%</td>
+              <td data-label="ad">10%</td>
+              <td data-label="fee">$50/month</td>
+              <td data-label="fair">N/A</td>
+              <td data-label="other">N/A</td>
           </tr>
           <tr>
-            <td>Silver</td>
-            <td>25%</td>
-            <td>15%</td>
-            <td>$100/month</td>
-            <td>✔️</td>
-            <td>N/A</td>
+            <td scope="row" data-label="member">Silver</td>
+            <td data-label="events">25%</td>
+            <td data-label="ad">15%</td>
+            <td data-label="fee">$100/month</td>
+            <td data-label="fair">✔️</td>
+            <td data-label="other">N/A</td>
           </tr>
           <tr>
-            <td>Gold</td>
-            <td>50%</td>
-            <td>50%</td>
-            <td>$250/month</td>
-            <td>✔️</td>
-            <td>
+            <td scope="row" data-label="member">Gold</td>
+            <td data-label="events">50%</td>
+            <td data-label="ad">50%</td>
+            <td data-label="fee">$250/month</td>
+            <td data-label="fair">✔️</td>
+            <td data-label="other">
               <li>5 free featured ads per year</li>
               <li>1 free training per quarter</li>
             </td>
           </tr>
       </table>
     </div>
-  </fieldset>
-  </div>
+
   </main>
 
 
