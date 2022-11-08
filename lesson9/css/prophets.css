@@ -1,0 +1,17 @@
+h1{
+    display: block;
+    text-align: center;
+}
+.cards h2{
+    font-size: 24pt;
+    color: brown;
+}
+.cards section{
+    margin: 1rem;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

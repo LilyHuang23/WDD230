@@ -494,7 +494,9 @@ footer{
     margin-bottom: .625em;
     margin-left: 0pt;
   }
-
+  #thankspage{
+    display: block;   
+  }
 }
 /* large */
 @media screen and (min-width:1100px) {
@@ -612,11 +614,10 @@ footer{
   figure {background-color:#fff;}
   /* hover effect */
   figure img:hover {box-shadow: 0 0 50px #333;} 
-  /* #joinpage {
-    display: block;
-    width: 90%; 
-    justify-items: auto;
-  } */
+  #thankspage{
+    display: block;   
+  }
+ 
 
   
 }
