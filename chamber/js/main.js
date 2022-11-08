@@ -37,7 +37,7 @@ function setwindchill(temp, windspeed) {
 setwindchill(49, 10);
 
 // join page
-const dateControl = document.querySelector('input[type="hidden"]');
+const dateControl = document.querySelector('.time[type="hidden"]');
 dateControl.value = today;
 // thanks page
 function returnHome (){
