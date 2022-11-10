@@ -7,9 +7,9 @@ const loadImg = (image) => {
     };
 }
 
-imgToLoad.forEach((pictures) => {
-    loadImg(pictures);
-});
+// imgToLoad.forEach((pictures) => {
+//     loadImg(pictures);
+// });
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((item, observer) => {

@@ -2,12 +2,12 @@ const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-
 function displayProphets(prophet) {  // Create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');    // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${prophet.name}${prophet.lastname}`;
+    h2.textContent = `${prophet.name} ${prophet.lastname}`;
     // Add/append the section(card) with the h2 element
     let p1 = document.createElement('p');
-    p1.textContent = `Date of birth:${prophet.birthdate}`;
+    p1.textContent = `Date of birth: ${prophet.birthdate}`;
     let p2 = document.createElement('p');
-    p2.textContent = `Place of birth:${prophet.birthplace}`;
+    p2.textContent = `Place of birth: ${prophet.birthplace}`;
     let img = document.createElement('img');
     img.setAttribute('src', prophet.imageurl);
     

@@ -2,16 +2,22 @@ h1{
     display: block;
     text-align: center;
 }
+.cards img{
+    margin: 10pt;
+}
 .cards h2{
     font-size: 24pt;
     color: brown;
 }
 .cards section{
-    margin: 1rem;
-
+    margin: 2pt;
+    background-color: bisque;
+    justify-content: center;
+    text-align: center;
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
