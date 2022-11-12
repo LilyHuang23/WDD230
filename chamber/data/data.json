@@ -5,84 +5,84 @@
             "city": "Boise", 
             "phone": "208-395-6200",
             "website": "www.albertsons.com",
-            "image": "images/"
+            "image": "images/albersons.webp"
         },
         {
             "names": "Panera Bread", 
             "city": "Nampa", 
             "phone": "855-372-6372",
             "website": "https://www.panerabread.com/",
-            "image": "images/"
+            "image": "images/panera.webp"
         },
         {
             "names": "Micron Technology", 
             "city": "Boise", 
             "phone": "208-368-4000",
             "website": "https://www.micron.com/",
-            "image": "images/"
+            "image": "images/micron.webp"
         },
         {
             "names": "WinCo Food", 
             "city": "Boise", 
             "phone": "800-824-1706",
             "website": "https://www.wincofoods.com/",
-            "image": "images/"
+            "image": "images/winco.webp"
         },
         {
             "names": "Lamb Weston", 
             "city": "Eagle", 
             "phone": "208-938-1047",
             "website": "https://www.lambweston.com/",
-            "image": "images/"
+            "image": "images/lambweston.webp"
         },
         {
             "names": "Glanbia Foods", 
             "city": "Twin Falls", 
             "phone": "208-733-3226",
             "website": "https://www.glanbia.com/",
-            "image": "images/"
+            "image": "images/glanbiafoods.webp"
         },
         {
             "names": "Silverwood RV Park", 
             "city": "Athol", 
             "phone": "208-683-3400",
             "website": "https://www.silverwoodthemepark.com/lodging/",
-            "image": "images/"
+            "image": "images/silverwood.webp"
         },
         {
             "names": "Melaleuca", 
             "city": "Idaho Falls", 
             "phone": "208-534-3000",
             "website": "www.melaleuca.com",
-            "image": "images/"
+            "image": "images/melaleuca.webp"
         },
         {
             "names": "St. Luke’s Health System", 
             "city": "Boise", 
             "phone": "208-381-9000",
             "website": "https://www.stlukesonline.org/",
-            "image": "images/"
+            "image": "images/stluke.webp"
         },
         {
             "names": "J.R. Simplot", 
             "city": "Boise", 
             "phone": "208-336-2110",
             "website": "https://www.simplot.com/",
-            "image": "images/"
+            "image": "images/jrsimplot.webp"
         },
         {
             "names": "Heatercraft Marine Products", 
             "city": "Rathdrum", 
             "phone": "208-687-4400",
             "website": "https://innerdemonmotorsports.com/",
-            "image": "images/"
+            "image": "images/heatercraft.webp"
         },
         {
             "names": "Boise Cascade", 
             "city": "Boise", 
             "phone": "208-522-6564",
             "website": "https://www.bc.com/",
-            "image": "images/"
+            "image": "images/boisecascade.webp"
         }
         
     ]

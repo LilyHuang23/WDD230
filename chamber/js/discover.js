@@ -15,7 +15,7 @@ if (lastVisit != null) {
 }
 visit.textContent = visitMessage;
 window.localStorage.setItem("last-visit", theday.toString());
-
+// hover 
 // lazy load
 let imgToLoad = document.querySelectorAll("img[data-src]");
 

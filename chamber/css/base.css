@@ -262,6 +262,15 @@ main{
   border:solid #795548;
   margin-top: 5px;
 }
+.discover1 picture:hover {box-shadow: 0 0 50px #333;}
+.discover2 picture:hover {box-shadow: 0 0 50px #333;}
+.discover3 picture:hover {box-shadow: 0 0 50px #333;}
+.discover4 picture:hover {box-shadow: 0 0 50px #333;}
+.discover5 picture:hover {box-shadow: 0 0 50px #333;}
+.discover6 picture:hover {box-shadow: 0 0 50px #333;}
+.discover7 picture:hover {box-shadow: 0 0 50px #333;}
+.discover8 picture:hover {box-shadow: 0 0 50px #333;}
+.discover9 picture:hover {box-shadow: 0 0 50px #333;}
 /* join CSS */
 
 #joinpage {
