@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="discription" content="Travel Idaho Chamber of Commerce - Home page. This page is for class purpose.">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/base.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
   <title>Travel Idaho Chamber of Commerce</title>
@@ -38,26 +38,17 @@
       <div class="date"></div>  
     </header>
   </div>    
-<main>
+<main id="directory">
   <section id="bizheader">
     <h1>Business Directory</h1>
-    <img src="images/grid.png" id="cradselect" alt="Grid icons created by mattbadal - Flaticon"> 
-    <img src="images/list.png" id="listselect" alt="List icons created by Chanut - Flaticon"> 
+    <div class="bizbutton">
+    <button id="cardselect"><img src="images/grid.png" alt="Grid icons created by mattbadal - Flaticon"></button>
+    <button id="listselect"><img src="images/list.png" alt="List icons created by Chanut - Flaticon"></button> 
+    </div>
   </section>
   <section id="cardview">
-    
-
   </section>
   <section id="listview">
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>City</th>
-        <th>Telephone</th>
-        <th>Website</th>
-      </tr>
-    </table>
-
   </section>
     
 </main>
@@ -73,7 +64,7 @@
     <div>&copy; <span></span> | Travel Idaho | WDD 230 Project | </div>
     <div id="datediv">Last Update: <span id="lastupdatedate"></span></div>
     
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <script src="js/directory.js"></script>
 
   </footer>

@@ -411,6 +411,49 @@ label.radio input{
   display: block;
   text-align: center; 
 }
+/* directory page css */
+#bizheader{
+  display: block;
+  border: #795548;
+  text-align: center;
+  background-color: #795548;
+}
+.bizbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15pt;
+}
+
+#cardselect img{
+  width: 25pt;
+}
+#listselect img{
+  width: 25pt;
+}
+#cardview{
+  justify-content: center;
+}
+#cardview div{
+  border: solid#795548;
+  margin: 5pt;
+  padding: 5pt;
+}
+#cardview img{
+  width: 200pt;
+}
+#listview table{
+  align-items: center;
+}
+#listview tr tr:nth-child(even){
+  background-color: rgb(250, 227, 193);
+
+}
+#listview tr tr:nth-child(odd){
+  background-color: rgb(187, 118, 53);
+}
+
+
 
 
 footer{
@@ -506,6 +549,17 @@ footer{
   #thankspage{
     display: block;   
   }
+  /* directory */
+  #directory{
+    display: block;
+  }
+  #cardview{
+    display: flex;
+    flex-basis: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
 }
 /* large */
 @media screen and (min-width:1100px) {

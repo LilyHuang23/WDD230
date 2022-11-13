@@ -18,23 +18,26 @@ listselect.addEventListener('click', () => {
 
 
 function displayCard(card) {
-    let cardview = document.querySelector("#cardview");
     let cardelt = document.createElement("div");
-    cardelt.innerHTML = ` <img src=“${card.image}”>
-    <p>${card.names}</p>
+    // <img src= “${card.imageURL}" alt="${card.names}”>
+    cardelt.innerHTML = `
+    
+    <h2>${card.names}</h2>
     <p>${card.city}</p>
     <p>${card.phone}</p>
     <p><a href="${card.website}">${card.website}</a></p>`;
     cardview.appendChild(cardelt);
+    document.querySelector("#cardview").appendChild(cardelt);
+
 }
 function displayList(list) {
     let row = document.createElement("tr");
-    row.innerHTML = ` <td><img src=“${card.image}”></td>
-    <td>${card.names}</td>
-    <td>${card.city}</td>
-    <td>${card.phone}</td>
-    <td><a href="${card.website}">${card.website}</a></td>`;
-    document.querySelector("#listview").appendChild(list);
+    row.innerHTML = `
+    <td><h2>${list.names}</h2></td>
+    <td>${list.city}</td>
+    <td>${list.phone}</td>
+    <td><a href="${list.website}">${list.website}</a></td>`;
+    document.querySelector("#listview").appendChild(row);
 }
 
 const requestURL = "data/data.json";
@@ -49,3 +52,27 @@ const requestURL = "data/data.json";
         bizlist.forEach(displayCard);
         bizlist.forEach(displayList);
     });
+// main js
+
+const htoday = new Date();
+if (htoday.getDay()==4) {
+    document.querySelector(".banner").style.display="block";
+}
+// select the elements to manipulate (output to)
+const datefield = document.querySelector(".date");
+// derive the current date using a date object
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+datefield.innerHTML = `<em>${fulldate}</em>`;
+
+
+function toggleMenu(){
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburgerBtn').classList.toggle('open');
+}
+const x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;
+// footer last update
+const today = new Date();
+document.querySelector("footer div span").textContent = today.getFullYear();
+document.getElementById("lastupdatedate").textContent = document.lastModified;
