@@ -4,7 +4,7 @@
             "names": "Albertsons", 
             "city": "Boise", 
             "phone": "208-395-6200",
-            "website": "www.albertsons.com",
+            "website": "https://www.albertsons.com",
             "imageURL": "images/albertsons.webp"
         },
         {
@@ -53,7 +53,7 @@
             "names": "Melaleuca", 
             "city": "Idaho Falls", 
             "phone": "208-534-3000",
-            "website": "www.melaleuca.com",
+            "website": "https://www.melaleuca.com",
             "imageURL": "images/melaleuca.webp"
         },
         {

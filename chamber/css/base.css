@@ -438,6 +438,8 @@ label.radio input{
   border: solid#795548;
   margin: 5pt;
   padding: 5pt;
+  width: 300pt;
+  height: 400pt;
 }
 #cardview img{
   width: 200pt;

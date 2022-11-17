@@ -21,7 +21,7 @@ function displayCard(card) {
     let cardelt = document.createElement("div");
     // <img src= “${card.imageURL}" alt="${card.names}”>
     cardelt.innerHTML = `
-    
+    <img src= “${card.imageURL}" alt="${card.names}”>
     <h2>${card.names}</h2>
     <p>${card.city}</p>
     <p>${card.phone}</p>
