@@ -40,7 +40,8 @@
     fetch(apiURL)
         .then((response) => response.json())
         .then((jsObject) => {
-            console.log(jsObject);
+            // console.log(jsObject);
+            showWeather(jsObject);
         });
 </script>
 </html>

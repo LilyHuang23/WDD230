@@ -3,6 +3,7 @@
 .banner{
   text-align: center;
   grid-column: 1/5;
+  display: none;
 }
 .banner p{
   display: flex;
@@ -444,6 +445,13 @@ label.radio input{
 #cardview img{
   width: 200pt;
 }
+#listview{
+  display: none;
+
+}
+#listview table td{
+  display: block;
+}
 #listview table{
   align-items: center;
 }
@@ -560,6 +568,9 @@ footer{
     flex-basis: 50px;
     flex-wrap: wrap;
     align-items: center;
+  }
+  #listview table td{
+    display: table-cell;
   }
 
 }

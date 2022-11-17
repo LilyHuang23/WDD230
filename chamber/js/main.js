@@ -1,5 +1,5 @@
 const htoday = new Date();
-if (htoday.getDay()==4) {
+if (htoday.getDay()==3) {
     document.querySelector(".banner").style.display="block";
 }
 // select the elements to manipulate (output to)
@@ -18,13 +18,7 @@ const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 
-// join page
-const dateControl = document.querySelector('.time[type="hidden"]');
-dateControl.value = today;
-// thanks page
-function returnHome (){
-    location.replace("https://lilyhuang23.github.io/wdd230/chamber/index.html")
-}
+
 // footer last update
 const today = new Date();
 document.querySelector("footer div span").textContent = today.getFullYear();

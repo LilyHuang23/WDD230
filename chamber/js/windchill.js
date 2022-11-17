@@ -16,4 +16,4 @@ function setwindchill(temp, windspeed) {
     windchillobj.innerHTML = windchillmsg;
 
 }
-setwindchill(49, 10);
+// setwindchill(49, 10);
