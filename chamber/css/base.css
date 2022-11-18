@@ -401,6 +401,7 @@ label.myinput input, label.myinput textarea{
 }
 label.radio{
   display: block;
+  margin-left: 10pt;
 
 }
 label.radio input{
@@ -439,15 +440,15 @@ label.radio input{
   border: solid#795548;
   margin: 5pt;
   padding: 5pt;
-  width: 300pt;
-  height: 400pt;
+  width: 250pt;
+  height: 300pt;
 }
 #cardview img{
   width: 200pt;
 }
 #listview{
   display: none;
-
+  justify-content: center;
 }
 #listview table td{
   display: block;

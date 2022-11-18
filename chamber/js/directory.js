@@ -4,16 +4,16 @@ let cardview = document.querySelector("#cardview");
 let listview = document.querySelector("#listview");
 
 cardselect.addEventListener('click', () => {
-    cardview.getElementsByClassName.display = 'grid';
-    listview.getElementsByClassName.display = 'none';
-    cardselect.getElementsByClassName.opacity = 1.0;
-    listselect.getElementsByClassName.opacity = 0.5;
+    cardview.style.display = 'grid';
+    listview.style.display = 'none';
+    cardselect.style.opacity = 1.0;
+    listselect.style.opacity = 0.5;
 });
 listselect.addEventListener('click', () => {
-    cardview.getElementsByClassName.display = 'none';
-    listview.getElementsByClassName.display = 'block';
-    cardselect.getElementsByClassName.opacity = 0.5;
-    listselect.getElementsByClassName.opacity = 1.0;
+    cardview.style.display = 'none';
+    listview.style.display = 'block';
+    cardselect.style.opacity = 0.5;
+    listselect.style.opacity = 1.0;
 });
 
 
@@ -52,27 +52,3 @@ const requestURL = "data/data.json";
         bizlist.forEach(displayCard);
         bizlist.forEach(displayList);
     });
-// main js
-
-const htoday = new Date();
-if (htoday.getDay()==4) {
-    document.querySelector(".banner").style.display="block";
-}
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
-// derive the current date using a date object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-datefield.innerHTML = `<em>${fulldate}</em>`;
-
-
-function toggleMenu(){
-    document.getElementById('primaryNav').classList.toggle('open');
-    document.getElementById('hamburgerBtn').classList.toggle('open');
-}
-const x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;
-// footer last update
-const today = new Date();
-document.querySelector("footer div span").textContent = today.getFullYear();
-document.getElementById("lastupdatedate").textContent = document.lastModified;
