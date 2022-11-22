@@ -20,7 +20,7 @@ function showWeather(obj) {
     const iconURL = `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`;
 
     let windchillmsg = "N/A";
-    let temp = obj.main.temp;
+    let temp = Math.round(obj.main.temp);
     let windspeed = obj.wind.speed;
 
     if (temp <= 50 && windspeed > 3) {
