@@ -21,20 +21,21 @@
         <p>Chamber of Commerce</p>
       </div>
       <div class="social">
-        <img src="images/facebook.png" alt="Facebook icons created by Bogdan Rosu - Flaticon">
-        <img src="images/instagram.png" alt="Instagram icons created by Hight Quality Icons - Flaticon">
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook icons created by Bogdan Rosu - Flaticon"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram icons created by Hight Quality Icons - Flaticon"></a>
       </div>
-        <nav id="entireNav">
-          <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
-            <ul id="primaryNav">
-              <!-- put in the active after li so <li class="active><a" -->
-              <li><a href='index.html'>Home</a></li>
-              <li><a href='discover.html'>Discover</a></li>
-              <li><a href='directory.html'>Directory</a></li>
-              <li><a href='join.html'>Join</a></li>
-              <li><a href='contact.html'>Contact</a></li>
-            </ul>
+      <div id="entireNav"> 
+      <nav>          
+        <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
+          <ul id="primaryNav">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='discover.html'>Discover</a></li>
+            <li><a href='directory.html'>Directory</a></li>
+            <li><a href='join.html'>Join</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+          </ul>
         </nav>
+      </div>
       <div class="date"></div>  
     </header>
   </div>         
@@ -43,39 +44,46 @@
   <main>
     <section class="hero">
       <picture>
-        <source media="(min-width: 530px)" srcset="images/medium.webp" />
-        <source media="(min-width: 1100px)" srcset="images/large.webp" />
-        <img src="images/small.webp" alt="New hero picture for this week- people in the office" />
+        <source media="(min-width: 530px)" srcset="images/hero2.webp" />
+        <source media="(min-width: 1100px)" srcset="images/hero3.webp" />
+        <img src="images/hero.jpg" alt="Hero picture Little Redfish Lake by Charles Knowles / CC BY 2.0" />
       </picture>
-      <!-- <img src="images/hero.jpg" alt="Little Redfish Lake by Charles Knowles / CC BY 2.0"> -->
       <h2>Welcome to Travel Idaho</h2>
-      <button class="herobutton">Join the Chamber</button>
+      <a href ="join.html"><button class="herobutton" >Join the Chamber</button></a>
     </section>
     <section class="event">
       <h2>What Happend Across The River?</h2>
-      <!-- <a href="https://thehauntedriver.com/" alt="The Haunted River website">🎃Visit Here🎃</a> -->
       <p>👻  The Haunted River  👻</p>
       <p>Thinking where to celebrate Halloween? More info...</p>
+      <a href="https://thehauntedriver.com/" alt="The Haunted River website">🎃 Visit Here 🎃</a>
     </section>
     <section class="weather">
       <h2>Weather</h2>
       <div class="weatherdiv">
         <img id="weathericon"src="" alt="">
         <h2><span id="temperature"></span>&deg; F</h2> 
-        <h2 class="describe"></h2>
+        <figcaption></figcaption>
       </div>
       <hr>
-      <h3>Wind Speed: <span id="windspeed"></span> mph</h3>
-      <h3>Wind Chill: <span id="windchill"></span></h3>
+      <p>Wind Speed: <span id="windspeed"></span> mph</p>
+      <p>Wind Chill: <span id="windchill"></span></p>
     </section>
     <section class="newRel">
       <h2>New Release</h2>
-      <p>I don't know what to put here, but I will type something so it looks like I have some content in here.</p>
+      <h3>Life Lessons: 99-year-old Mike Rosenwinkel shares what he’s thankful for.</h3>
+      <p>Life is hard, stressful, fast-paced and can sometimes be overwhelming. 
+        That’s why EastIdahoNews.com is partnering with MorningStar Senior Living of Idaho Falls to bring you Life Lessons.
+        We’re asking MorningStar residents to share gems of wisdom every Tuesday with us. Some of their answers will make you laugh, some may make you cry, some may even change your life.      
+        We recently went with a group of veterans from Morningstar to the Aeromark airplane hangar in Idaho Falls. Bob and Jane Hoff own Aeromark and invited the veterans to see several planes that were on display.
+        </p>
+        <a href="https://www.eastidahonews.com/2022/11/life-lessons-99-year-old-mike-rosenwinkel-shares-what-hes-thankful-for/">👉 Read More</a>
+      <p></p>
     </section>
     <div class="join">
     <section>
-      <button class="joinbutton">Join Us!</button>
+      <h2>Join</h2>
       <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+      <a href ="join.html"><button class="joinbutton">Join Us!</button></a>
     </div>
     </section>    
     
@@ -85,7 +93,7 @@
         <img src="images/s1.png" alt="https://www.flaticon.com/free-icons/event Event icons created by Freepik - Flaticon">
         <p>"Be inspired and achieve your potential!"</p>
         <hr>
-        <a href="https://ibelong.byui.edu/home_login">👉BYUI Event websit👈</a>
+        <a href="https://ibelong.byui.edu/home_login">👉 BYUI Event website 👈</a>
         <p>Contact Us: ask@byui.edu</p>
       </div>
       <div class="s2">
@@ -93,7 +101,7 @@
         <img src="images/s2.png" alt="https://www.flaticon.com/free-icons/event Event icons created by Freepik - Flaticon">
         <p>Festivals & Events In Idaho</p>
         <hr>
-        <a href="https://visitidaho.org/things-to-do/festivals-events/">Annual Festivals & Events in Idaho</a>
+        <a href="https://visitidaho.org/things-to-do/festivals-events/">👉 Annual Festivals & Events in Idaho 👈</a>
         <p>Idaho Department of Commerce - Tourism Development</p>
       </div>
       <div class="s3">
@@ -101,7 +109,7 @@
         <img src="images/s3.png" alt="Event flag icons created by Freepik - Flaticon">
         <p>Upcoming Events in Rexburg Idaho</p>
         <hr>
-        <a href="https://www.rexburg.org/art/page/upcoming-events">Events in Rexburg</a>
+        <a href="https://www.rexburg.org/art/page/upcoming-events">👉 Events in Rexburg 👈</a>
         <p>City of Rexburg Idaho</p>
       </div>
     </section>
@@ -113,9 +121,9 @@
   <footer>
     <img src="images/idaho.jpg" alt="Travel Idaho company logo"/>
     <h2>Travel Idaho Chamber of Commerce</h2>
-    <p class="address">525 S Center St, Rexburg, ID 83460</p>
-    <p class="email">lilyhuang@byui.edu</p>
-    <p class="phone">2084961411</p>
+    <p class="email">📩 lilyhuang@byui.edu</p>
+    <p class="phone">📞 2084961411</p>
+    <p class="address">📍 525 S Center St, Rexburg, ID 83460</p>
     <a href="https://goo.gl/maps/EVHqBLSCmNrDXuSu5">📍 Location 📍</a>
     <hr>
     <div>&copy; <span></span> | Travel Idaho | WDD 230 Project | </div>

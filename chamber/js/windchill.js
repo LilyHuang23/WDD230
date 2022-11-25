@@ -1,5 +1,5 @@
-const lat = "64.8378";
-const lon = "-147.7164";
+const lat = "43.613499";
+const lon = "-116.203453";
 const APIKEY= "5be535fa5e3977d7f2980c18ef561e11";
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}&units=imperial`;
 
@@ -15,12 +15,12 @@ function showWeather(obj) {
     let windspeedobj = document.querySelector("#windspeed");
     let windchillobj = document.querySelector("#windchill");
     let weathericon = document.querySelector("#weathericon"); 
-    let describe = document.querySelector("#describe"); 
+    let figurecaption = document.querySelector('figcaption');
 
     const iconURL = `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`;
 
-    let windchillmsg = "N/A";
-    let temp = Math.round(obj.main.temp);
+    let windchillmsg = "";
+    let temp = obj.main.temp;
     let windspeed = obj.wind.speed;
 
     if (temp <= 50 && windspeed > 3) {
@@ -28,12 +28,11 @@ function showWeather(obj) {
         windchillmsg = `${chill}&deg; F`;
     }
 
-    tempobj.textContent = temp;
-    windspeedobj.textContent = windspeed;
+    tempobj.textContent = Math.round(temp);
+    windspeedobj.textContent = Math.round(windspeed);
     windchillobj.innerHTML = windchillmsg;
     weathericon.setAttribute("src", iconURL);
     weathericon.setAttribute("alt", obj.weather[0].description);
-    describe = obj.weather[0].main;
-
+    figurecaption.textContent = obj.weather[0].main;
 }
 // setwindchill(49, 10);

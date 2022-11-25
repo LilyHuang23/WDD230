@@ -13,7 +13,6 @@
 <body>
   <div id="content">
     <p class="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.🤝🏼</p>
-
     <header>
       <img class="logo1" src="images/idaho.jpg" alt="Travel Idaho company logo"/>            
       <div class="title">
@@ -37,9 +36,23 @@
       <div class="date"></div>  
     </header>
     <main id="contactpage">
-        <h1>Leave us a message! Our agent will be in tauch with you shortly.</h1>
-        <button class="homeBut" onclick="returnHome()">Return to Home page</button>
-    
+      <h2>Contact Page</h2>
+      <form method="get" action="thankscontact.html">
+          <fieldset>
+              <legend>Your Information</legend>
+              <label class="top required">First Name * <input type="text" name="fname" required></label>
+              <label class="top required">Last Name * <input type="text" name="lname" required></label>
+              <label class="top required">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+          </fieldset>
+          <fieldset>
+              <legend>Contact Us</legend>
+              <label class="top">Message:<textarea class="business" name="bdescription" cols="36" rows="5"></textarea></label>
+              <input id="currentdate" type="hidden" name="datetime">
+          </fieldset>
+          <input class="submitBtn" type="submit" value="Send Your Message">
+      </form>
+      
+  
     </main>
 
     <footer>

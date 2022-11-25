@@ -49,8 +49,7 @@ nav ul{
   margin: 0;
 }
 nav ul li a{
-  display: block;
-  padding: .8rem 2vw;
+  display: flex;
   text-decoration: none;
   color: white;
   border-top: 1px solid white;
@@ -90,10 +89,10 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  margin-top: 15pt;
+  margin-top: 5pt;
 }
 .social img{
-  width: 20px;
+  width: 40px;
   margin: 5px;  
 }
 .hero{
@@ -129,22 +128,21 @@ main{
   font-size: 15pt;
 }
 .event{
-
+  text-align: center;
   border-radius: 5pt;
   border: 2pt solid black;
   margin-top: 10pt;
   padding: 5pt;
   background-color: #a98274;
+  font-size: 15pt;
 }
 .event h2{
   color:black;
-  text-align: center;
   font-size: 25pt;
   margin: 10pt;
 }
-.event p{
-  text-align: center;
-  
+.event a{
+  color: rgb(239, 239, 244); 
 }
 .weather{
   border-radius: 5pt;
@@ -152,22 +150,20 @@ main{
   margin-top: 10pt;
   padding: 5pt;
   background-color: #a98274;
+  font-size: 15pt;
 }
 .temp{
   grid-column: 2/3;
   grid-row:1/2;
   margin: 0;
 }
-.describe{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  margin: 5pt;
+figcaption{
+  text-align: center;
 }
 .weather h2{
   color:black;
   text-align: center;
   font-size: 25pt;
-  margin: 5pt;
 }
 .weatherdiv{
   display: grid;
@@ -179,8 +175,6 @@ main{
   grid-column: 1/2;
   grid-row: 1/3;
   margin: 15pt;
-  width: 80%;
-  height: 50%;
 }
 
 .weather hr{
@@ -204,8 +198,14 @@ main{
   text-align: center;
   margin: 10pt;
 }
+.newRel a{
+  color: white;
+}
 .join{
   visibility: hidden;
+}
+.join h2{
+  font-size: 25pt;
 }
 .spotlight{
   border-radius: 5pt;
@@ -237,6 +237,7 @@ main{
   margin: 5pt;
 }
 .spotlight a{
+  color: rgb(117, 117, 247);
   display: block;
   text-align: center;
 }
@@ -258,9 +259,12 @@ main{
   display: block;
   text-align: center;
   margin-top: 5px;
-}
-#discover-main section{
   border:solid #795548;
+  border-radius: 15pt;
+  background-color: #a98274;
+}
+#discover-main div{
+  border: #795548;
   margin-top: 5px;
 }
 .discover1 picture:hover {box-shadow: 0 0 50px #333;}
@@ -272,6 +276,10 @@ main{
 .discover7 picture:hover {box-shadow: 0 0 50px #333;}
 .discover8 picture:hover {box-shadow: 0 0 50px #333;}
 .discover9 picture:hover {box-shadow: 0 0 50px #333;}
+
+.discoverintro{
+  border: #795548;
+}
 /* join CSS */
 
 #joinpage {
@@ -413,20 +421,24 @@ label.radio input{
   display: block;
   text-align: center; 
 }
-/* directory page css */
+/* Directory page css */
+
 #bizheader{
   display: block;
-  border: #795548;
   text-align: center;
-  background-color: #795548;
+  border: #795548;
+  border-radius: 5pt;
+  background-color: #a98274;
+  padding: 3pt;
 }
 .bizbutton{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15pt;
 }
-
+#cardselect{
+  margin: 10pt;
+}
 #cardselect img{
   width: 25pt;
 }
@@ -437,44 +449,52 @@ label.radio input{
   justify-content: center;
 }
 #cardview div{
-  border: solid#795548;
-  margin: 5pt;
-  padding: 5pt;
-  width: 250pt;
-  height: 300pt;
+  border: 2px solid rgb(6, 6, 74);
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  margin: 30px;
 }
 #cardview img{
   width: 200pt;
 }
 #listview{
-  display: none;
+  display: inline-block;
   justify-content: center;
-}
-#listview table td{
-  display: block;
-}
-#listview table{
-  align-items: center;
-}
-#listview tr tr:nth-child(even){
-  background-color: rgb(250, 227, 193);
+} 
 
+#listview tr td{
+  display: block;
+  text-align: center;
 }
-#listview tr tr:nth-child(odd){
-  background-color: rgb(187, 118, 53);
+#listview {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+  overflow: hidden;
+  margin-top:30px;
 }
 
 
 
 
 footer{
-    font-size: 12pt;
-    text-align: center;
-    background-color: #795548;
-    color: white;
-    text-align: center;
-    letter-spacing: 5px;
-    margin-top: 15pt;
+  font-size: 15pt;
+  text-align: center;
+  background-color: #795548;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 10pt;
+}
+footer img{
+  margin-top: 10pt;
+}
+footer p{
+  margin:5pt;
+}
+footer a{
+  color: white;
 }
 
 
@@ -564,24 +584,51 @@ footer{
   #directory{
     display: block;
   }
+  #listview{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 15pt;
+    padding: 10pt;
+}
   #cardview{
     display: flex;
-    flex-basis: 50px;
     flex-wrap: wrap;
     align-items: center;
   }
-  #listview table td{
-    display: table-cell;
-  }
+ 
 
 }
 /* large */
 @media screen and (min-width:1100px) {
   header{
       font-size: 15pt;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr 2fr 1fr;
       grid-template-rows: 1fr;
       padding-bottom: 2em;
+  }
+  #primaryNav a {
+    display: inline-flex;
+    font-size: 15pt;
+    padding: 0;
+    margin:5pt;
+  }
+  nav button{
+    display: none;
+  }
+  #primaryNav{
+    display: flex;
+    margin-left: 20pt;
+  }
+  #entireNav{
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  nav ul li a {
+    border: none;
+    font-size: 15pt;
+    margin-left: 5pt;
+    background-color: #795548;
   }
   .title{
       padding-right: 2em;
@@ -591,33 +638,15 @@ footer{
       width:60%;
       padding-right: 0;
   }
-  .socials{
+  .social{
       width: 50%;
-      text-align: right;
-      margin-left: 2em;
+      margin: 2em;
   }
   .date{
       font-size: 15pt;
       grid-row: 3/4;
   }
-  nav button{
-      display: none;
-  }
-  #primaryNav{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column: 3/4;
-      grid-row: 1/2;
-  }
-  #entireNav{
-      grid-column: 3/4;
-      grid-row: 1/2;
-  }
-  nav ul li a {
-      border: none;
-      font-size: 15pt;
-      background-color: #795548;
-  }
+  
   .socials{
       grid-column:4/5;
   }
@@ -694,8 +723,9 @@ footer{
   #thankspage{
     display: block;   
   }
- 
-
-  
+  /* directory page */
+  #listview{
+    vertical-align: inherit;
 }
 
+}
