@@ -265,7 +265,10 @@ figcaption{
 }
 #discover-main div{
   border: #795548;
-  margin-top: 5px;
+  margin: 5px;
+}
+#discover-main img{
+  max-width: 300pt;
 }
 .discover1 picture:hover {box-shadow: 0 0 50px #333;}
 .discover2 picture:hover {box-shadow: 0 0 50px #333;}
@@ -327,10 +330,6 @@ table td {
 }
 
 table td::before {
-  /*
-  * aria-label has no advantage, it won't be read inside a table
-  content: attr(aria-label);
-  */
   width: max-content;
   content: attr(data-label);
   display: block;
@@ -393,19 +392,22 @@ label.myinput{
   padding: 10pt;
 }
 input.mysubmit {
-  width: 20rem;
+  width: 10rem;
   max-width: 30rem;
   display: flow-root;
   height: 28pt;
   margin-left: 10pt;
+  border: #333;
+  border-radius: 5pt;
+  background-color: #a98274
 }
 label.myinput input, label.myinput textarea{
   display: block;
   font-size: 1.2rem;
   padding: .5rem;
   width: 20rem;
-  max-width: 30rem;
-
+  max-width: 40rem;
+  border-radius: 5pt;
 }
 label.radio{
   display: block;
@@ -473,6 +475,17 @@ label.radio input{
   margin: auto;
   overflow: hidden;
   margin-top:30px;
+}
+/* contact page */
+#contactpage{
+  display:block;
+}
+#contactpage h2{
+  padding: 20px;
+  background-color: #a98274;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
 }
 
 
@@ -563,7 +576,9 @@ footer a{
       grid-row: 5/6;
   }
   /* Discover CSS */
-  /* figure img:hover {box-shadow: 0 0 50px #333;}
+  #discover-main img{
+    max-width: 500pt;
+  }
   /* joinpage */
   #joinpage {
     display: grid;
@@ -576,6 +591,21 @@ footer a{
     display: block;
     margin-bottom: .625em;
     margin-left: 0pt;
+  }
+  label.myinput input, label.myinput textarea{
+    display: block;
+    font-size: 20pt;
+    padding: .5rem;
+    width: 30rem;
+    max-width: 50rem;
+  
+  }
+  input.mysubmit {
+    width: 30rem;
+    max-width: 50rem;
+    display: flow-root;
+    height: 28pt;
+    margin-left: 10pt;
   }
   #thankspage{
     display: block;   
@@ -718,6 +748,9 @@ footer a{
   }
   /* discover page picture affact */
   figure {background-color:#fff;}
+  #discover-main img{
+    max-width: 800pt;
+  }
   /* hover effect */
   figure img:hover {box-shadow: 0 0 50px #333;} 
   #thankspage{

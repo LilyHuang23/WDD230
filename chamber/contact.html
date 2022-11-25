@@ -20,8 +20,8 @@
         <p>Chamber of Commerce</p>
       </div>
       <div class="social">
-        <img src="images/facebook.png" alt="Facebook icons created by Bogdan Rosu - Flaticon">
-        <img src="images/instagram.png" alt="Instagram icons created by Hight Quality Icons - Flaticon">
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook icons created by Bogdan Rosu - Flaticon"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram icons created by Hight Quality Icons - Flaticon"></a>
       </div>
         <nav id="entireNav">
           <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
@@ -33,25 +33,27 @@
               <li><a href='contact.html'>Contact</a></li>
             </ul>
         </nav>
-      <div class="date"></div>  
+      <div class="date"></div>
+      </div>  
     </header>
     <main id="contactpage">
+      <div id="contactform">
       <h2>Contact Page</h2>
       <form method="get" action="thankscontact.html">
           <fieldset>
               <legend>Your Information</legend>
-              <label class="top required">First Name * <input type="text" name="fname" required></label>
-              <label class="top required">Last Name * <input type="text" name="lname" required></label>
-              <label class="top required">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-          </fieldset>
-          <fieldset>
+              <label class="myinput">First Name * <input type="text" name="fname" required></label>
+              <label class="myinput">Last Name * <input type="text" name="lname" required></label>
+              <label class="myinput">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+              <hr>
               <legend>Contact Us</legend>
-              <label class="top">Message:<textarea class="business" name="bdescription" cols="36" rows="5"></textarea></label>
+              <label class="myinput">Message:<textarea name="bdescription" cols="36" rows="5"></textarea></label>
               <input id="currentdate" type="hidden" name="datetime">
+              <input class="mysubmit" type="submit" value="Send Your Message 📮">
+
           </fieldset>
-          <input class="submitBtn" type="submit" value="Send Your Message">
       </form>
-      
+    </div>
   
     </main>
 
