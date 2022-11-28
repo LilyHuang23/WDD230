@@ -463,11 +463,16 @@ label.radio input{
 #listview{
   display: inline-block;
   justify-content: center;
+  margin: 0 auto;
 } 
 
 #listview tr td{
   display: block;
   text-align: center;
+  border: none; 
+}
+#listview tr{
+  border: solid 1pt;
 }
 #listview {
   width: 90%;
@@ -625,6 +630,15 @@ footer a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  }
+  #listview tr td{
+    display: table-cell;
+    text-align: center;
+    border: solid 1pt; 
+    padding: 0;
+  }
+  #listview tr{
+  display: table-row;
   }
  
 

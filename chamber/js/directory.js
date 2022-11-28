@@ -37,7 +37,7 @@ function displayList(list) {
     <td>${list.city}</td>
     <td>${list.phone}</td>
     <td><a href="${list.website}">${list.website}</a></td>`;
-    document.querySelector("#listview").appendChild(row);
+    document.querySelector("#listview table").appendChild(row);
 }
 
 const requestURL = "data/data.json";
