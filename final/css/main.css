@@ -1,0 +1,89 @@
+#content{
+    font-size: 14pt;
+    font-family:'Ubuntu', sans-serif;  
+}
+
+header h1{    
+    text-align: center;    
+}
+
+header img{
+    border: 2px black solid;
+    width: 60pt;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding: 1rem;    
+    align-items: center;
+    color: white;
+    background-color: #ef9a9a;
+}
+
+
+
+main img{
+    max-width: 100%;
+}
+main h2{
+    text-align: center;
+}
+footer{
+    background-color:  #ef9a9a;
+    color: white;
+    text-align: center;
+    padding: .5rem;    
+    border: 5px #ef9a9a;
+}
+
+#site-header-sample{
+    background-color:  #ef9a9a;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25pt;
+    color: black;
+}        
+
+#h1-sample{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20pt;
+}
+
+@media screen and (min-width: 530px){
+    nav{
+        display: block;
+    }
+    .topnav{
+        margin: 0 auto;
+        text-align: center;    
+        padding: 1rem;
+        margin: .1rem;
+        background-color:  #ef9a9a;  
+        
+    }
+    nav a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-left: 10pt;
+        padding: 5pt;
+    }
+    a:hover{
+        color: #546e7a;
+    }
+
+    #content{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px){
+    nav .topnav{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-decoration: none;
+        color: white;
+        padding: 5pt;
+    }
+}
