@@ -598,14 +598,6 @@ footer a{
     max-width: 500pt;
   }
   /* joinpage */
-  #joinpage {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-  }
-  .joinForm{
-    
-  }
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
@@ -785,6 +777,12 @@ footer a{
       grid-row: 3/4;
       border: 2pt solid black;
       background-color: #ebd4cc; 
+  }
+  /* join page */
+  #joinpage {
+    display: flex;
+    width: 90%;
+    justify-content: center;
   }
   /* discover page picture affact */
   figure {background-color:#fff;}
