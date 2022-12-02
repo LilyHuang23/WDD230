@@ -1,5 +1,5 @@
 const htoday = new Date();
-if (htoday.getDay()==4) {
+if (htoday.getDay()== 3,4,5,6,7) {
     document.querySelector(".banner").style.display="block";
 }
 // select the elements to manipulate (output to)

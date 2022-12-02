@@ -22,9 +22,9 @@ header{
   height: auto;
   padding: 1em;
 }
-.title{
+/* .title{
   color: white;
-}
+} */
 .date{
   grid-row: 2/3;
   grid-column: 1/5;
@@ -92,8 +92,7 @@ main{
   margin-top: 5pt;
 }
 .social img{
-  width: 40px;
-  margin: 5px;  
+  display: none; 
 }
 .hero{
   border-radius: 5pt;
@@ -493,6 +492,14 @@ label.radio input{
   text-align: center;
 }
 
+#directors p{
+  text-align: center;
+}
+#directors img{
+  width:200pt;
+  margin-left: 80pt;
+}
+
 
 
 
@@ -521,6 +528,10 @@ footer a{
 @media screen and (min-width:530px){
   body {
       display: block;
+  }
+  .social img{
+    width: 40px;
+    margin: 5px;  
   }
   main{
       display: grid;
@@ -640,6 +651,13 @@ footer a{
   #listview tr{
   display: table-row;
   }
+  /* contact page */
+  #directors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
  
 
 }
@@ -674,15 +692,15 @@ footer a{
     margin-left: 5pt;
     background-color: #795548;
   }
-  .title{
+  /* .title{
       padding-right: 2em;
       padding-bottom: 1em
-  }
+  } */
   .logo1{
       width:60%;
       padding-right: 0;
   }
-  .social{
+  .social img{
       width: 50%;
       margin: 2em;
   }
@@ -710,13 +728,18 @@ footer a{
       grid-row: 1/3;
   }
   .hero img{
+      position: absolute;
       width: 100%;
-      height: 100%;
+      height: 80%;
+      top: 60pt;
+      bottom: 90pt;
+      left: 0pt;
   }
   .herobutton{
       position: absolute;
+      width: 80%;
       height: 40pt;
-      bottom: 30pt;
+      bottom: 20pt;
       left: 50pt;
   }
   .weather{
@@ -763,7 +786,7 @@ footer a{
   /* discover page picture affact */
   figure {background-color:#fff;}
   #discover-main img{
-    max-width: 800pt;
+    max-width: 1000pt;
   }
   /* hover effect */
   figure img:hover {box-shadow: 0 0 50px #333;} 
@@ -773,6 +796,12 @@ footer a{
   /* directory page */
   #listview{
     vertical-align: inherit;
+}
+/* contact page */
+#directors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
 }
 
 }

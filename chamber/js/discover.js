@@ -1,5 +1,5 @@
 // Using local storage, display the amount of time in day
-window.localStorage.setItem("last-visit", new Date("10/25/2022"));
+window.localStorage.setItem("last-visit", new Date());
 
 const visit = document.querySelector("#visit-message");
 
@@ -17,6 +17,7 @@ visit.textContent = visitMessage;
 window.localStorage.setItem("last-visit", theday.toString());
 // hover 
 // lazy load
+
 let imgToLoad = document.querySelectorAll("img[data-src]");
 
 const loadImg = (image) => {
