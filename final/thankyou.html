@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="discription" content="Temple Inn & Suites - BYU-Idaho WDD230 Final Project">
+    <meta name="description" content="Temple Inn & Suites - BYU-Idaho WDD230 Final Project">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +13,40 @@
     <title>Temple Inn & Suites</title>
 </head>
 <body>
-    <div id="content">
         <header>
             <img src="images/logo.webp" alt="Temple Inn Suites logo"/>
             <h1>Temple Inn Suites Site Plan</h1>
         </header>
     <nav>
         <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="temple.html">Temple</a>
-        <a href="reservation.html">Reservation</a>
-        <a href="service.html">Service</a>
-        <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
     <main>
+       
 
     </main>
     <footer>
-        <div>&copy; <span></span> Temple Inn & Suites | Lily Huang |  Bethesda, MD, USA</div>
+        <div id="footer1">
+        <img src="images/logo.webp" alt="Footer Temple Inn Suites logo"/>
+        <h2>Temple Inn & Suites</h2> 
+        </div>
+        <div id="footer2">     
+        <p>Phone: (301)123-4567</p>
+        <p>Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+        <a href="https://goo.gl/maps/1HdgK6kPyT87Qeko8">Location</a>
+        </div>
+        <div id="footer3">
+        <div>&copy; <span id="footeryear"></span> | Temple Inn & Suites | Bethesda, MD, USA </div>
         <div id="datediv">Last Update: <span id="lastupdatedate"></span></div>
-
-    </footer> 
-    </div>
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+    </div>  
+    </footer>   
 </body>
 </html>
