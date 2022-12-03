@@ -1,7 +1,4 @@
-/* #content{
-    font-size: 14pt;
-    font-family:'Ubuntu', sans-serif;  
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
 
 header h1{    
     text-align: center;    
@@ -17,11 +14,64 @@ header{
     grid-template-columns: 1fr 7fr;
     padding: 1rem;    
     align-items: center;
-    color: white;
     background-color: #ef9a9a;
+    font-family: 'Ubuntu', sans-serif;
 }
+/* hamburger menu */
+nav button{
+    margin: .2rem 2vw;
+    border: none;
+    font-size: 16pt;
+}
+#hamburgerBtn{
+    text-align: right;
+    color: black;
+    background-color: transparent;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    text-align: right;
+  }
+  nav ul li.active{
+    background-color: #ebd4cc;
+    color: white;
+  }
+  nav ul li a:hover{
+    background-color: #ef9a9a;
+    color:black;
+  }
+  nav ul{
+    display: none;
+  }
+  nav ul.open{
+    display: block;
+    background-color:#ef9a9a;
+  }  
+  #hamburgerBtn span:nth-child(1){
+    display: block;
+  }
+  #hamburgerBtn span:nth-child(2){
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(1){
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(2){
+    display: block;
+  } 
 
 
+#content{
+    font-family: 'Ubuntu', sans-serif;
+}
 
 main img{
     max-width: 100%;
@@ -33,6 +83,7 @@ footer{
     background-color:  #ef9a9a;
     color: white;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
     padding: .5rem;    
     border: 5px #ef9a9a;
 }
