@@ -13,59 +13,96 @@
         <header>
             <img src="images/logo.webp" alt="Temple Inn Suites logo"/>
             <h1>Temple Inn & Suites</h1>
+            <button id="bookingBtn" onclick="window.location.href='https://lilyhuang23.github.io/wdd230/final/reservation.html';"><span>Book Now!</span></button>
+            <nav id="entireNav">
+                <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="temple.html">Temple</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+            </nav>
         </header>
-    <nav id="entireNav">
-        <button id="hamburgerBtn"><span>&#9776;</span><span>𝗑</span></button>
-        <ul id="primaryNav">
-            <li><a href="index.html">Home</a></li>
-                <li><a href="temple.html">Temple</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-    </nav>
+    
     <main>
 
-  <div id="gallerywrapper">
-    <div id="gallery">
-        <div id="pic1">
-            <img src="images/moseslake_temple.webp" alt="Moses Lake Temple">
-            <a class="previous" href="#pic6">&lt;</a>
-            <a class="next" href="#pic2">&gt;</a>
-            <h3>Moses Lake Temple</h3>
+  <section id="hero">
+    <img src="images/hotel.webp" alt="Hero Image">
+    <div id="herotext">
+        <h2> Make Your Temple Trip More Comfortable</h2>
+        <p>Find the hotel you like to stay</p>
+        <button id="heroBtn" onclick="window.location.href='https://lilyhuang23.github.io/wdd230/final/reservation.html';"><span>Book Now!</span></button>
+    </div>  
+  </section>
+<section id="templeintro">
+    <img src="images/washingtontemple1.webp" alt= "Washington D.C Temple intro">
+    <h2>Washington D.C. Temple</h2>
+    <div id="templeintroText">
+        <div>
+        <h2>ADDRESS</h2>
+        <p>9900 Stoneybrook Drive
+            Kensington, Maryland  20895-3199
+            United States</p>
+        <p>Telephone: (+1) 301-588-0650</p>
+        <a href="https://goo.gl/maps/4eTgeC3gXEANud8V6">Street Map</a>
         </div>
-        <div id="pic2">
-            <img src="images/hotel.webp" alt="Saints Hotel Interior">
-            <a class="previous" href="#pic1">&lt;</a>
-            <a class="next" href="#pic3">&gt;</a>
-            <h3>Saints Hotel Interior</h3>
+        <div>
+        <h2>SERVICES</h2>
+        <p>Clothing rental available</p>
+        <p>NO cafeteria food served</p>
+        <p>NO patron housing available</p>
+        <p>Distribution center nearby <a href="https://store.churchofjesuschrist.org/usa/en/storelocator">(Store Loactor)</a></p>
+        <h2>Basic Information</h2>
         </div>
-        <div id="pic3">
-            <img src="images/hotel2.webp" alt="Saints Hotel Restaurant">
-            <a class="previous" href="#pic2">&lt;</a>
-            <a class="next" href="#pic4">&gt;</a>
-            <h3>Saints Hotel Restaurant</h3>
-        </div>
-        <div id="pic4">
-            <img  src="images/hotel3.webp" alt="Northern Hotel Interior">
-            <a class="previous" href="#pic3">&lt;</a>
-            <a class="next" href="#pic5">&gt;</a>
-            <h3>Northern Hotel Interior</h3>
-        </div>
-        <div id="pic5">
-            <img src="images/hotel4.webp" alt="Northern Hotel Lobby">
-            <a class="previous" href="#pic4">&lt;</a>
-            <a class="next" href="#pic6">&gt;</a>
-            <h3>Northern Hotel Lobby</h3>
-        </div>
-        <div id="pic6">
-            <img src="images/hotel5.webp" alt="Snowy Mountains Hotel">
-            <a class="previous" href="#pic5">&lt;</a>
-            <a class="next" href="#pic1">&gt;</a>
-            <h3>Northern Hotel Lobby</h3>
+        <div>
+        <p>Announcement:  15 November 1968</p>
+        <p>Groundbreaking and Site Dedication:  7 December 1968 by Hugh B. Brown</p>
+        <p>Public Open House:  17 September to 2 November 1974</p>
+        <p>Dedication:  19 to 22 November 1974 by Spencer W. Kimball</p>
+        <p>Public Open House:  28 April to 11 June 2022</p>
+        <p>Rededication:  14 August 2022 by Russell M. Nelson</p>
         </div>
     </div>
-</div>
+</section id="hotelinfo">
+<h2>To Explore More Hotel Detail...</h2>
+<button id="hotelBtn" onclick="window.location.href='https://lilyhuang23.github.io/wdd230/final/reservation.html';"><span>Book Now!</span></button>
+<div class="container">
+    <!--Area of the images-->
+       <div class="wrapper">
+          <img src="images/hotel2.webp">
+          <img src="images/hotel3.webp">
+          <img src="images/hotel4.webp">
+          <img src="images/hotel5.webp">
+          <img src="images/hotel6.webp">
+          <img src="images/hotel7.webp">
+       </div>
+    </div>
+<section>
+    <section id="review">
+        <h2>Review More</h2>
+        <div id="weather">
+            <h2>Weather</h2>
+            <figure class="weatherdiv">
+                <img id="weathericon" src="images/placeholder.png" alt="weather">
+                <h2><span id="temperature"></span>&deg; F</h2> 
+                <figcaption></figcaption>
+            </figure>
+            <hr>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            <p>Humidity: <span id="humidity"></span></p>
+        </div>
+        <div id="moretemples">
+            <h2>More Temples in Washington</h2>
+            <img src="images/moseslake_temple.webp" alt="Temple">
+            <button id="templeBtn" onclick="window.location.href='https://lilyhuang23.github.io/wdd230/final/temple.html';"><span>View More!</span></button>
+        </div>
+
+    </section>
+
+</section>
+
     </main>
     <footer>
         <div id="footer1">
@@ -82,7 +119,10 @@
         <div id="footer3">
         <div>&copy; <span id="footeryear"></span> | Temple Inn & Suites | Bethesda, MD, USA </div>
         <div id="datediv">Last Update: <span id="lastupdatedate"></span></div>
+        
         <script src="js/main.js"></script>
+        <script src="js/weather.js"></script>
+
     </div>  
     </footer>   
     
