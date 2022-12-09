@@ -1,0 +1,149 @@
+{
+    "temples":[
+        {
+            "names": "Washington D.C. Temple", 
+            "address": "9900 Stoneybrook Dr Kensington MD 20895-3199 United States", 
+            "telephone": "(1) 301-588-0650",
+            "services": ["No clothing rental available",
+            "No cafeteria available", 
+            "No patron housing available","Distribution center nearby"],
+            "templeclosures":[ "Friday, 23 December 2022 (Limited Operations)",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022 (Limited Operations)"],
+            "imageURL": "images/atlanta.webp"},
+        {
+            "names": "Atlanta Georgia Temple", 
+            "address": "6450 Barfield Rd NE Sandy Springs GA 30328-4283 United States", 
+            "telephone": "(1) 770-393-3698",
+            "services": ["No clothing rental available",
+            "No cafeteria available", 
+            "No patron housing available","Distribution center nearby"],
+            "templeclosures":[ "Saturday, 10 December 2022 (Limited Operations)",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/atlanta.webp"
+        },
+        {
+            "names": "Bismarck North Dakota Temple", 
+            "address": "2930 Cody D Bismarck ND 58503-0116 United States", 
+            "telephone": "(1) 701-258-9590",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/bismark.webp"
+        },
+        {
+            "names": "Columbia River Washington Temple", 
+            "address": "969 Gage Blvd Richland WA 99352-7777 United States", 
+            "telephone": "(1) 509-628-0990",
+            "services": ["No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available","Distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022", "Saturday, 31 December 2022"],
+            "imageURL": "images/columbia.webp"
+        },
+       
+        {
+            "names": "Dallas Texas Temple", 
+            "address": "6363 Willow Ln Dallas TX 75230-2227 United States", 
+            "telephone": "(1) 972-991-1273",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/dallas.webp"
+        },
+        {
+            "names": "Fort Lauderdale Florida Temple", 
+            "address": "3901 SW 154th Ave Davie FL 33331 United States", 
+            "telephone": "(1) 954-382-8390",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/fort.webp"
+        },
+        {
+            "names": "Gilbert Arizona Temple", 
+            "address": "3301 S Greenfield Rd Gilbert AZ 85297 United States", 
+            "telephone": "(1) 480-822-5000",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/gilbert.webp"
+        },
+        {
+            "names": "Hartford Connecticut Temple", 
+            "address": "2 Central Wy Farmington CT 06032 United States", 
+            "telephone": "(1) 860-773-7200",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/hartford.webp"
+        },
+        {
+            "names": "Idaho Falls Idaho Temple", 
+            "address": "1000 Memorial Dr Idaho Falls ID 83402-3410 United States", 
+            "telephone": "(1) 208-522-7669",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/idaho.webp"
+        },
+        {
+            "names": "Jordan River Utah Temple", 
+            "address": "10200 S Temple Drive South Jordan UT 84095-8814 United States", 
+            "telephone": "(1) 801-254-3003",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/jordan.webp"
+        },
+        {
+            "names": "Kona Hawaii Temple", 
+            "address": "75-230 Kalani St Kailua-Kona HI 96740-1833 United States", 
+            "telephone": "(1) 808-331-8504",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Friday, 23 December 2022","Saturday, 24 December 2022",
+            "Friday, 30 December 2022","Saturday, 31 December 2022"],
+            "imageURL": "images/kona.webp"
+        },
+        {
+            "names": "Las Vegas Nevada Temple", 
+            "address": "827 Temple View Dr Las Vegas NV 89110-2920 United States", 
+            "telephone": "(1) 702-452-5011",
+            "services": ["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/las.webp"
+        },
+        {
+            "names": "Medford Oregon Temple", 
+            "address": "3900 Grant Rd Central Point OR 97502-3911 United States", 
+            "telephone": "(1) 541-664-2050",
+            "services":["No clothing rental available",
+            "No cafeteria available","No patron housing available",
+            "No distribution center nearby"],
+            "templeclosures": ["Saturday, 24 December 2022 - Monday, 26 December 2022",
+            "Saturday, 31 December 2022"],
+            "imageURL": "images/medford.webp"
+        }
+        
+    ]
+}
