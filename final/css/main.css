@@ -76,6 +76,9 @@ nav ul li a{
   #hamburgerBtn.open span:nth-child(2){
     display: block;
   } 
+  img{
+    width: 100%;
+  }
   /* Home page */
   /* hero section */
   #hero{
@@ -230,12 +233,8 @@ nav ul li a{
   bottom: 20pt;
   left: 140pt;
 }
-#templeBtn{
 
-}
-img{
-  width: 100%;
-}
+
 /*Animation activated by keyframes*/
 @keyframes slide{
   0%{
@@ -262,6 +261,24 @@ img{
   100%{
       transform: translateX(-300%);
   }
+}
+/* Temple page */
+#templepage section{
+  margin: 10pt;
+  background-color: #f0d2d2;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border-radius: 5px;
+  padding: 10pt;
+}
+#templepage {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
 }
 /* all page */
 #content{
@@ -387,6 +404,14 @@ footer img{
         width: 40pt;
         margin-left: 10pt;
     }
+    /* temple page */
+    .cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      align-items: center;
+      width: 40%;
+    }
     
 }
 
@@ -394,5 +419,13 @@ footer img{
     
   #gallerywrapper #gallery div img{      
     width: 950px;
+}
+/* temple page */
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  align-items: center;
+  width: 40%;
 }
 }
