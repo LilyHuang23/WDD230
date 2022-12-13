@@ -20,7 +20,7 @@ function showWeather(obj) {
 
     const iconURL = `http://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`;
 
-    let humiditymsg = obj.hourly.humidity;
+    let humiditymsg = obj.main.hourly.humidity;
     let temp = obj.main.temp;
     let windspeed = obj.wind.speed;
 

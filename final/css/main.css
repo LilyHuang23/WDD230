@@ -173,8 +173,7 @@ nav ul li a{
   #hotelbtn{
     cursor: pointer;
     display: inline-block;
-    position: relative;
-    
+    position: relative;  
     transition: 0.5s;
   }
   #hotelBtn:after {
@@ -210,30 +209,6 @@ nav ul li a{
   display: flex;
   animation: slide 15s infinite;
 }
-#review{
-  position: relative;
-}
-#review div{
-  width: 50%;
-  height: 70%;
-  background-color:  rgb(233, 231, 231);
-  border-radius: 8pt;
-  padding: 10pt;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10pt;
-}
-#weather img{
-  width: 50pt;
-  justify-items: center;
-}
-
-#moretemples #templeBtn{
-  position: absolute;
-  bottom: 20pt;
-  left: 140pt;
-}
-
 
 /*Animation activated by keyframes*/
 @keyframes slide{
@@ -262,6 +237,40 @@ nav ul li a{
       transform: translateX(-300%);
   }
 }
+#review{
+  position: relative;
+}
+#review div{
+  width: 50%;
+  height: 70%;
+  background-color:  rgb(233, 231, 231);
+  border-radius: 8pt;
+  padding: 10pt;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10pt;
+}
+#weather img{
+  width: 50pt;
+  justify-items: center;
+}
+
+#moretemples #templeBtn{
+  position: absolute;
+  bottom: 20pt;
+  left: 140pt;
+}
+#templeBtn{
+  border-radius: 4px;
+    background-color: #ba6b6c;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+}
+
+
 /* Temple page */
 #templepage section{
   margin: 10pt;
@@ -279,6 +288,82 @@ nav ul li a{
   flex-direction: column;
   align-items: center;
   width: 40%;
+}
+
+/* reservation page */
+/* room div */
+#roomtype{
+  padding: 10pt;
+  display: block;
+  font-size: 16pt;
+}
+#roomtype{
+  text-align: center;
+}
+/* form style */
+label.myinput input:required{
+  border-left: red solid 5pt;
+}
+label.myinput input:required:valid{
+  border-left: green solid 5pt;
+
+}
+label.myinput{
+  display: block;
+  padding: 10pt;
+  font-size: 16pt;
+}
+input.mysubmit {
+  width: 10rem;
+  max-width: 30rem;
+  display: flow-root;
+  height: 28pt;
+  margin-left: 10pt;
+  border: #333;
+  border-radius: 5pt;
+  background-color: #ba6b6c;
+}
+label.myinput input, label.myinput textarea{
+  display: block;
+  font-size: 1.2rem;
+  padding: .5rem;
+  width: 20rem;
+  max-width: 40rem;
+  border-radius: 5pt;
+}
+label.radio{
+  display: block;
+  margin-left: 10pt;
+  padding: 8pt;
+  font-size: 16pt;
+
+}
+label.radio input{
+  margin-right: 10pt;
+
+}
+#roomnum select{
+  width: 16pt;
+  top: 14px;
+  right: 10px;
+  height: 0;
+}
+.mysubmit{
+  align-items: center;
+}
+/* thank you page */
+#thankyou{
+  text-align: center;
+}
+.homeBut{
+  border-radius: 4px;
+  background-color: #ba6b6c;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+
 }
 /* all page */
 #content{
@@ -411,6 +496,23 @@ footer img{
       margin: 0;
       align-items: center;
       width: 40%;
+    }
+    /* reservation page */
+    label.myinput input, label.myinput textarea{
+      display: block;
+      font-size: 20pt;
+      padding: .5rem;
+      width: 30rem;
+      max-width: 50rem;
+    
+    }
+    input.mysubmit {
+      width: 30rem;
+      max-width: 50rem;
+      display: flow-root;
+      font-size: 24pt;
+      height: 28pt;
+      margin-left: 10pt;
     }
     
 }

@@ -28,47 +28,51 @@
 
     <main>
         <form method="GET" action="thankyou.html">
-            <fieldset class="bookingForm">
             
-              <h1>Booking Information</h1>
+            
+           
+                <div id="roomtype">
+                <h1>Room Choice</h1>
                 <hr>
-                <div id="standardroom">
                 <img src="images/hotel.webp" alt="Standard Room">
                 <h2>Standard Room</h2>
-                <p>Great for a solo traveler or a couple.</p>
+                <p>It is likely the same as a queen or a single room, great for a solo traveler or a couple.</p>
                 </div>
-                <div id="deluxeroom">
+                <div id="roomtype">
                 <img src="images/hotel3.webp" alt="Deluxe Room">
                 <h2>Deluxe Room</h2>
                 <p>These rooms are typically equipped for groups who need more space with slightly upgraded amenities or a nicer view., like a couple or small family. </p>
                 </div>
-                <div id="jointroom">
+                <div id="roomtype">
                 <img src="images/hotel5.webp" alt="Joint Room">
                 <h2>Joint Room</h2>
                 <p>Two rooms that share a common wall but no connecting door.</p>
                 <p>Joint rooms are meant for families with younger children who may be old enough to stay in their own space, but not too far from their parents.</p>
                 </div>
-                <label for="roomtype">What kind of room that you would like to stay:
+            <fieldset class="bookingForm">
+                <h1>Booking Information</h1>
+                <hr>
+                <label class="myinput">What kind of room that you would like to stay:</label>
                 <label class="radio"><input type="radio" name="roomtype" value="Standard Room">Standard Room</label>
                 <label class="radio"><input type="radio" name="roomtype" value="Deluxe Room">Deluxe Room</label>
                 <label class="radio"><input type="radio" name="roomtype" value="Joint Room">Joint Room</label>
-                <label for="roomnum">How many room that you would like to book:
-                    <select id="roomnum" name="roomnum">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                      </select>
-                <label for="start">Start date:<input type="date" id="start" name="trip-start" value="2022-12-13" min="2022-01-01" max="2023-12-31">
-                <label for="end">End date:<input type="date" id="end" name="trip-end" value="2022-12-14" min="2022-01-01" max="2023-12-31">
-                
+                <label class="myinput" for="roomnum">How many room that you would like to book:</label>
+                <label class="myinput">    
+                <select id="roomnum" name="roomnum">
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                      </select></label>
+                <label class="myinput">Start date:<input type="date" id="start" name="trip-start" value="2022-12-13" min="2022-01-01" max="2023-12-31" required></label>
+                <label class="myinput">End date:<input type="date" id="end" name="trip-end" value="2022-12-14" min="2022-01-01" max="2023-12-31" required></label>
                 <label class="myinput">First Name* <input type="text" name="fname" required></label>
                 <label class="myinput">Last Name* <input type="text" name="lname" required></label>
                 <label class="myinput">Phone* <input type="tel" name="phone" placeholder="301-123-4567" required></label>
                 <label class="myinput">Email* <input type="email" name="email" placeholder="@templeinnsuites.com" required></label>
                 <label class="myinput">Home State<input type="text" name="state" placeholder="MD" pattern="[A-Z]{2}"></label>
               
-              <label class="myinput">Special Accommodations<textarea name="description" cols="40" rows="5"></textarea></label> 
+              <label class="myinput">Special Accommodations:<textarea name="description" cols="40" rows="5"></textarea></label> 
               <label class="time"><input type="hidden" id="time" name="datetime" value=""></label>
               <input class="mysubmit" type="submit" value="Book!">
             </fieldset>
