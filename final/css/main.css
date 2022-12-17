@@ -159,7 +159,7 @@ nav ul li a{
     border-radius: 4px;
     background-color: #ba6b6c;
     border: none;
-    color: #fff;
+    color: black;
     text-align: center;
     font-size: 20px;
     padding: 8px;
@@ -649,6 +649,7 @@ footer img{
       height: 28pt;
       margin-left: 10pt;
     }
+
     /* service page */
     /* #serviceCard{
       display: gird;
