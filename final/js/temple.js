@@ -34,6 +34,8 @@ fetch(requestURL)
       console.table(jsonObject);  // temporary checking for valid response and data parsing
       let temples = jsonObject["temples"];
       temples.forEach(displayTemple);
+    }).then(() => {
+        likeslist.forEach(displayLike);
   });
 // This function handles when a user checks an individual checkbox
 // First, it updates the list of "liked" temples by either adding or removing it
@@ -63,5 +65,4 @@ function displayLike(item){
     obj.checked = true;
 }
 
-temples.forEach(displayTemple);
-likeslist.forEach(displayLike);
+

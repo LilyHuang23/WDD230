@@ -282,7 +282,7 @@ nav ul li a{
   padding: 10pt;
 }
 #templepage {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -365,6 +365,80 @@ label.radio input{
   padding: 8px;
 
 }
+/* service page */
+#serviceCard a{
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+
+}
+#serviceCard{
+  border-radius: 4px;
+  background-color:rgb(233, 231, 231);
+  border: none;  
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+}
+/* contact page */
+#contactpage{
+  display:block;
+}
+#contactpage h2{
+  padding: 20px;
+  background-color: #ef9a9a;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#missionaries p{
+  text-align: center;
+}
+#missionaries img{
+  width:200pt;
+  margin-left: 80pt;
+}
+/* reception page */
+#plan1{
+  border: #333 solid 1pt;
+  border-radius: 5pt;
+  margin: 10pt;
+  padding: 5pt;
+  background-color: #ef9a9a;
+}
+#plan1 h3{
+  text-align: center;
+}
+#plan2{
+  border: #333 solid 1pt;
+  border-radius: 5pt;
+  margin: 10pt;
+  padding: 5pt;
+  background-color: #ef9a9a;
+}
+#plan2 h3{
+  text-align: center;
+}
+#plan3{
+  border: #333 solid 1pt;
+  border-radius: 5pt;
+  margin: 10pt;
+  padding: 5pt;
+  background-color: #ef9a9a;
+}
+#plan3 h3{
+  text-align: center;
+}
+#contactBtn{
+  border-radius: 4px;
+  background-color: #ba6b6c;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px;
+}
+
 /* all page */
 #content{
     font-family: 'Ubuntu', sans-serif;
@@ -514,7 +588,29 @@ footer img{
       height: 28pt;
       margin-left: 10pt;
     }
-    
+    /* service page */
+    #serviceCard{
+      display: gird;
+      grid-template-columns: 1fr 1fr;
+    }
+    #receptionCard{
+      grid-column: 1/2;
+
+    }
+    #missionaryCard{
+      grid-column: 2/3;
+    }
+    #serviceInfo{
+      display: gird;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: .5fr 1fr; 
+    }
+    #speService{
+      grid-column: 1/2;
+    }
+    #amenities{
+      grid-column: 2/3;
+    }
 }
 
 @media screen and (min-width: 900px){
