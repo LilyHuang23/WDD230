@@ -17,7 +17,7 @@ let likeslist = JSON.parse(likes_string);
 function displayTemple(temples){
     let main = document.querySelector("main");
     let newsection = document.createElement("section");
-  newsection.innerHTML = `<img src="${temples.imageURL}">
+  newsection.innerHTML = `<img src="${temples.imageURL} alt="${temples.names}">
             <h2>${temples.names}</h2>
             <p>Address: ${temples.address}</p>
             <p>Telephone: ${temples.telephone}</p>

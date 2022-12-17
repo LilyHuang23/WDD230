@@ -19,6 +19,7 @@ header{
 }
 #bookingBtn{
   display: none;
+  color: black;
 }
 /* hamburger menu */
 nav button{
@@ -151,6 +152,17 @@ nav ul li a{
   }
   #templeintro img{
     width: 100%;
+  }
+  #templeBtn{
+    display: inline;
+    border-radius: 4px;
+    background-color: #ba6b6c;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    width: 120px;
   }
   /* hotel info */
   
@@ -490,6 +502,10 @@ footer{
     font-family: 'Ubuntu', sans-serif;
     padding: .5rem;    
     border: 5px #ef9a9a;
+}
+footer a{
+  text-decoration: none;
+  color: black;
 }
 footer img{
     width: 80pt;
