@@ -296,6 +296,7 @@ nav ul li a{
   text-align: left;
   border-radius: 5px;
   padding: 10pt;
+  width:80%;
 }
 #templepage {
   margin: 0 auto;
@@ -303,8 +304,9 @@ nav ul li a{
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  
 }
+
 
 /* reservation page */
 /* room div */
@@ -421,20 +423,21 @@ label.radio input{
 #contactpage{
   display:block;
 }
-#contactpage h2{
+/* #contactpage h2{
   padding: 20px;
   background-color: #ef9a9a;
   color: white;
   border-radius: 12px;
   text-align: center;
+} */
+#contactform fieldset{
+  border-radius: 5px;
 }
-
 #missionaries p{
   text-align: center;
 }
 #missionaries img{
   width:200pt;
-  margin-left: 80pt;
 }
 /* reception page */
 #plan1{
@@ -695,7 +698,14 @@ footer img{
     #missionaries {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: .5fr 1fr 1fr;
+      align-items: center;
+      margin-left: 5px;
+      border: black 1pt solid ;
+      border-radius: 5px;
+    }
+    #missionaries h2{
+      text-align: center;
     }
 }
 
@@ -749,4 +759,11 @@ footer img{
   align-items: center;
   width: 40%;
 }
+/* contact page */
+#contactpage{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+
 }
